@@ -12,15 +12,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-    <title>Somos General Turismo</title>
+    <title>NOSOTROS</title>
 </head>
 <body>
     <nav class="nav-header">
-        <h1>GENERAL TURISMO</h1>
-        <ul>
+     <h1 class="tituloencab">GENERAL TURISMO</h1>
+          <ul>
+            <li><a href="../../index.html">INICIO</a></li>
             <li><a href="./servicios.html">SERVICIOS</a></li>
             <li><a href="./promociones.html">PROMOCIONES</a></li>
-            <li><a href="#postulacion">UNITE</a></li>
+            <!--<li><a href="#postulacion">UNITE</a></li>-->
             <li><a href="./contacto.html">CONTACTO</a></li>    
     
         </ul>
@@ -90,22 +91,22 @@
      <h2>Te gustaria trabajar con nosotros?</h2>
      <p>Completa el formulario y dale click en enviar</p>
 
-      <form action="postulacion">
+      <form >
       <div>
           <label for="Nombre Completo">Nombre Completo</label>
           <input type="text" name="nombre" id="nombre" required>
       </div>
       <div>
           <label for="Edad">Edad: </label>
-          <input type="number" min="15" max="120" name="edad" id="edad">
+          <input type="number" min="15" max="120" name="edad" id="edad" required>
       </div>
       <div>
           <label for="telefono">Numero de telefono</label>
-          <input type="numbre" name="telefono" id="telefono">
+          <input type="numbre" name="telefono" id="telefono" required>
       </div>
       <div>
           <label for="email">Email</label>
-          <input type="email" name="email" id="email">
+          <input type="email" name="email" id="email" required>
       </div>
       <div>
           <!--<label for="experiencia">Breve experiencia (max 100 caracteres)</label>
@@ -124,8 +125,9 @@
       </label>
       </div>
       <div>
-          <input type="submit" value="Enviar">
+          <input type="submit" value="Enviar" onclick="postulacion()"
       </div>
+      <script src="../js/nosotros.js"></script>
      </form>
   </div>
 
@@ -133,16 +135,13 @@
     <footer class="footer">
         <nav class="nav-footer">
             <ul>
-                <li><a href="./servicios.html">SERVICIOS</a></li>
+                <!--<li><a href="./servicios.html">SERVICIOS</a></li>
                 <li><a href="./promociones.html">PROMOCIONES</a></li>
-                <li><a href="#postulacion">TRABAJA CON NOSOTROS</a></li>
-                <li><a href="./contacto.html">CONTACTO</a></li>    
+                <li><a href="./contacto.html">CONTACTO</a></li> -->
+                <li><a href="../../index.html">INICIO</a></li>   
         
             </ul>
-        </nav>
-            
-        ®Grupo 19 comicion 23031
-    
-    </footer>
+        </nav>               
+        ®Grupo 19 comicion 23031   -   todos los derechos reservados 
 </body>
 </html>
